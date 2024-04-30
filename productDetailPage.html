@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary d-flex">
+        <div class="container navber-container">
+            <a>
+                <img src="https://www.jiomart.com/assets/ds2web/images/Jiomart-logo-ds2.0.svg?v=24"></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <button class="deliverylocation-btn mx-4" id="location-modal" onclick="displayModal1Content()">
+                            <img class="" src="https://www.jiomart.com/assets/ds2web/jds-icons/location-icon.svg" alt="">
+                            <span class="text-light">Deliver to</span>
+                            <span class="text-light">Mumbai 400020</span>
+                        </button>
+                    </ul>
+                    <div class="conatiner modal1-Content border border-0 rounded-3 bg-light px-3 py-3" id="modal1">
+                        <div class="modal1-header">
+                            <h3 class="text-dark">Select Delivery Location</h3>
+                            <p class="text-info">Sign in or set delivery location to see product availability, offers and discounts.</p>
+                        </div>
+                        <div class="modal1-btn">
+                            <button type="button" class="border border-0 rounded-4 bg-secondary text-light fs-5 px-4 py-2" style="width: 100%;">Sign in to select address</button>
+                        </div>
+                        <div class="modal1-footer mt-4">
+                            <div class="d-flex gap-3 text-primary">
+                                <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                  </svg></span>
+                                <p>Enter a pincode</p>
+                            </div>
+                            <div class="d-flex gap-3 text-primary">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-crosshair2" viewBox="0 0 16 16">
+                                    <path d="M8 0a.5.5 0 0 1 .5.5v.518A7 7 0 0 1 14.982 7.5h.518a.5.5 0 0 1 0 1h-.518A7 7 0 0 1 8.5 14.982v.518a.5.5 0 0 1-1 0v-.518A7 7 0 0 1 1.018 8.5H.5a.5.5 0 0 1 0-1h.518A7 7 0 0 1 7.5 1.018V.5A.5.5 0 0 1 8 0m-.5 2.02A6 6 0 0 0 2.02 7.5h1.005A5 5 0 0 1 7.5 3.025zm1 1.005A5 5 0 0 1 12.975 7.5h1.005A6 6 0 0 0 8.5 2.02zM12.975 8.5A5 5 0 0 1 8.5 12.975v1.005a6 6 0 0 0 5.48-5.48zM7.5 12.975A5 5 0 0 1 3.025 8.5H2.02a6 6 0 0 0 5.48 5.48zM10 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                                  </svg></span>
+                                <p>Detect My Location</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <form class="d-inline-flex justify-content-center text-light" role="search">
+                <div class="form-group">
+                    <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <input class="bg-primary rounded-4 search-bar" placeholder="Search JioMart">
+                </div>
+            
+                <button type="button" class="cart-btn px-3" onclick="window.location='cart.html';">
+                    <img src="https://www.jiomart.com/assets/ds2web/jds-icons/cart-icon.svg" alt="">
+                </button>
+            
+                
+
+                <button class="Sign-in-btn px-4" type="button" onclick="window.location='signin.html'; ">
+                    <img src="https://www.jiomart.com/assets/ds2web/jds-icons/new-ds2-profile-icon.svg" alt="">
+                    <span>Sign In</span>
+                </button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <header class="text-light" style="width: 100vw;">
+        <div class="bg-primary px-4 py-2 d-flex justify-content-evenly">
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Groceries</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Premium Fruits</p>
+                <div class="dropdown-content">
+                    <a href="#">Apple, Pears</a>
+                    <a href="#">Plums</a>
+                    <a href="#">Avacado, Peach</a>
+                    <a href="#">Dates</a>
+                    <a href="#">Citrus, Mango & Grapes</a>
+                    <a href="#">Seasonal & Minor Fruits</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Home & Kitchen</p>
+                <div class="dropdown-content">
+                    <a href="#">Kitchen Ware</a>
+                    <a href="#">Furnishings</a>
+                    <a href="#">Home Decor</a>
+                    <a href="#">Disposables</a>
+                    <a href="#">Table wares</a>
+                    <a href="#">Garden & Outdoor</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Fashion</p>
+                <div class="dropdown-content">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Boys</a>
+                    <a href="#">Girl</a>
+                    <a href="#">Junior Boys</a>
+                    <a href="#">Infants</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Electronics</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Beauty</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Jwellery</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>Home Improvement</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class=" dropdown d-inline-block position-relative">
+                <p>All Categories</p>
+                <div class="dropdown-content">
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy & Bakery</a>
+                    <a href="#">Personal care</a>
+                    <a href="#">Staples</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+
+
+        </div>
+    </header> 
+    <div class="container d-flex gap-0 justify-content-evenly">
+       
+            <div class="detailPageImg col-6 mt-5 border border-0 bg-light shadow-sm py-5 px-3 text-center rounded-5" style="height: 500px; width: 500px; padding-left: 50px;">
+                <img src="https://www.jiomart.com/images/product/original/600520466/fortune-physically-refined-rice-bran-oil-3-l-can-fortune-everyday-full-grain-basmati-rice-5-kg-product-images-o600520466-p590121765-0-202403111554.jpg?im=Resize=(420,420)" height="450px">
+            </div>
+            <div class="col-6  mt-5 p-4 overflow-scroll" >
+                <a href="" class="text-decoration-none text-primary fw-bolder fs-5">Fortune+Fortune</a>
+                <p class="fw-bolder">Fortune Physically Refined Rice Bran Oil 3 L (Can) + Fortune Everyday Full Grain Basmati Rice 5 kg</p>
+                <div class="d-flex  justify-content-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                            <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                          </svg>
+                      </div>
+                      
+                </div>
+                <div>
+                    <p class="mb-0 fw-bolder fs-4">₹799.00 <span class="bg-success fs-6 rounded-1 px-3">39% OFF</span></p>
+                                <span class="text-info text-decoration-line-through">M.R.P.: ₹13,20.00 (Incl. of all taxes) </span> 
+                </div>
+                <div class="bg-info border border-1 mt-4"></div>
+                <div class="mt-4">
+                    <h4 class="fw-bolder">Offers(7)</h4>
+                    <div class="d-flex gap-3 mt-3" style="align-items: center;">
+                        <svg style="fill: green" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" class="bi bi-bank" viewBox="0 0 16 16">
+                            <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                          </svg>
+                          <h5>Bank Offers <br> <a src="" class="text-decoration-none text-info fs-6">Get upto 50% cashback on using Mobikwik wallet on JioMart for min. transaction </a>
+                          </h5>
+                    </div>
+                    <button type="button" class="border mt-4 bg-light text-primary fw-bold border-primary rounded-5 px-3 p-2">View All</button>
+                </div>
+                <div class="bg-info border border-1 mt-4"></div>
+                <div class="mt-4">
+                    <h4 class="fw-bolder"> Deliver To</h4>
+                    <div class="d-flex gap-3">
+                        <p class="text-dark">400020</p>
+                        <p class="text-info">Mumbai</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <p class="fw-bold" style="color: green;">
+                            In-stock
+                        </p>
+                        <p>Delivery between 28th April to 30th April</p>
+                    </div>
+                </div>
+                <div class="bg-info border border-1 mt-4"></div>
+                <div>
+                    <h4>Description</h4>
+                    <p id="des-details" class="overflow-hidden" style="height: 200px;">Fortune Physically Refined Rice Bran Oil is a premium cooking oil renowned for its health benefits and culinary versatility. Extracted through a physical refining process, this oil retains essential nutrients while ensuring purity and freshness. With its high smoke point, it is ideal for various cooking methods including frying, sautéing, and deep-frying, imparting a light and delicate flavor to dishes. This heart-healthy oil is rich in antioxidants, Vitamin E, and oryzanol, promoting cardiovascular health and overall well-being. Whether used for everyday cooking or gourmet creations, Fortune Rice Bran Oil guarantees a superior cooking experience with its unmatched quality and nutritional value. + Fortune Everyday Full Grain Basmati Rice is a premium-quality rice variety known for its superior taste and aroma. Sourced from the finest Basmati fields, this rice undergoes careful selection and processing to ensure that only the best grains make it to your table. With its long and slender grains, Fortune Everyday Basmati Rice cooks up perfectly fluffy and separate, making it an ideal choice for a variety of dishes. Whether you're cooking biryanis, pulavs, or simple steamed rice, this rice delivers an unmatched dining experience with its rich flavor and delicate fragrance. Elevate your meals with the exquisite taste of Fortune Everyday Full Grain Basmati Rice and enjoy the authentic goodness of Basmati rice with every bite. So what are you waiting for? Go ahead and buy this product online today!
+                    </p>
+                    <button  id= 'description-btn' onclick="showDescription()" class="border mt-4 bg-light text-primary fw-bold border-primary rounded-5 px-3 p-2">More Details</button>
+                </div>
+            </div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
